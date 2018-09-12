@@ -2,9 +2,10 @@
 
 \begin{titlepage}
 	\begin{center}
+  \makeatletter
         \includegraphics[width=0.3\textwidth]{Styles/lmu_siegel}\\
         \vskip 1cm
-		\textsc{\huge Titel}
+		\textsc{\huge \@title}
                 \vskip 1cm
                 \begin{large}
                   zur Erlangung des Doktorgrades an der\\[0.50cm]
@@ -20,13 +21,16 @@
 		\vfill
 		%
                 {\large vorgelegt von}\\[0.5cm]
-                {\LARGE \bfseries Roger Kowalewski}
+                \begin{LARGE}
+                    {\bfseries \@author}
+                \end{LARGE}
     %
     \vskip 1cm
     %
     \begin{small}
-        München, den 01.01.1954
+        München, den \@submissionDate
     \end{small}
+  \makeatother
 	\end{center}
 \end{titlepage}
 
@@ -37,30 +41,32 @@
   \phantom{}
   \vfill
   %
+  \makeatletter
   \begin{center}
     \begin{singlespace*}
     \begin{Huge}
-     Haupttitel
+        \@title
     \end{Huge}\\[0.2cm]
     %
     \begin{Large}
-      Untertitel
+        \@subtitle
     \end{Large}\\[1em]
       %
       \vskip 0.25cm
       %\emph{by}
       %\vskip 0.25cm
       %
-      \textsc{Roger Kowalewski}\par
+      \textsc{\@author}\par
     \end{singlespace*}
   \end{center}
   %
   \vfill
   %
   \begin{singlespace*}
-    Supervisors:            Prof.\,Dr.\,Dieter Kranzlmüller\\
-    \phantom{Supervisors:}  Prof.\,Dr.\,Zweit Gutachter
+    Supervisors:            \@supervisorA\\
+    \phantom{Supervisors:}  \@supervisorB
   \end{singlespace*}
+  \makeatother
 \end{titlepage}
 
 \newpage

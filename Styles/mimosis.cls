@@ -208,6 +208,16 @@
 \newcommand  {\nd}{\textsuperscript{\textup{nd}}\xspace}
 \renewcommand{\th}{\textsuperscript{\textup{th}}\xspace}
 
+
+
+
+\newcommand*{\supervisorA}[1]{\gdef\@supervisorA{#1}}
+\newcommand*{\@supervisorA}{Set \texttt{\string\supervisorA}}
+\newcommand*{\supervisorB}[1]{\gdef\@supervisorB{#1}}
+\newcommand*{\@supervisorB}{Set \texttt{\string\supervisorB}}
+\newcommand*{\submissionDate}[1]{\gdef\@submissionDate{#1}}
+\newcommand*{\@submissionDate}{Set \texttt{\string\submissionDate}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Penalties
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
