@@ -112,6 +112,11 @@ For LuaTeX or XeTeX users:
   or change the line `\setmainfont{Minion Pro}` in the preamble to
   another font&nbsp;(or leave it out entirely)
 
+## Font
+
+The font used here is `garamondx`. Please make that you have installed it from 
+the [Nonfree Latex Fonts](http://tug.org/fonts/getnonfreefonts/)
+
 # License
 
 The template uses the MIT license. Please see the file
