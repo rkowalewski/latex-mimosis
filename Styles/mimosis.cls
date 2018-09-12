@@ -13,9 +13,11 @@
            toc=bibliography,
            toc=index,]{scrbook}
 
+%\RequirePackage{tgbonum}
 \RequirePackage{ifpdf}
 \RequirePackage{ifxetex}
 \RequirePackage{ifluatex}
+\RequirePackage{mweights}
 
 \newif\ifxetexorluatex
 \ifxetex

@@ -70,8 +70,9 @@
 \ifxetexorluatex
   \setmainfont{Minion Pro}
 \else
-  \usepackage[lf]{ebgaramond}
-  \usepackage[oldstyle,scale=0.7]{sourcecodepro}
+  % Installation: http://tug.org/fonts/getnonfreefonts/
+  \usepackage{garamondx}
+  %\usepackage[oldstyle,scale=0.7]{sourcecodepro}
   \singlespacing
 \fi
 
@@ -100,14 +101,14 @@
 % Incipit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{\texttt{latex-mimosis}}
-\subtitle{A minimal, modern \LaTeX{} package for typesetting your thesis}
-\author{Bastian Rieck}
+\title{\texttt{Dissertation}}
+\subtitle{Dissertation Subtitle}
+\author{Roger Kowalewski}
 
 \begin{document}
 
 \frontmatter
-  \include{Sources/Title}
+  \include{Sources/Title_Dissertation_LMU}
   \include{Sources/Abstract}
 
   \tableofcontents
