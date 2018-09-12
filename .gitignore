@@ -33,7 +33,13 @@
 *.pgf-plot.*
 
 Figures/External/
+<<<<<<< HEAD
 
 Thesis.pdf
 
 tags
+||||||| merged common ancestors
+=======
+
+tags
+>>>>>>> minor changes

@@ -111,29 +111,29 @@
 \begin{document}
 
 \frontmatter
-  \include{Title_Dissertation_LMU}
-  \include{Sources/Abstract}
+\include{Sources/Title_Dissertation_LMU}
+\include{Sources/Abstract}
 
-  \tableofcontents
+\tableofcontents
 
 \mainmatter
 
-  \include{Sources/Introduction}
+\include{Sources/Introduction}
 
 % This ensures that the subsequent sections are being included as root
 % items in the bookmark structure of your PDF reader.
 \bookmarksetup{startatroot}
 \backmatter
 
-  \begingroup
-    \let\clearpage\relax
-    \glsaddall
-    \printglossary[type=\acronymtype]
-    \newpage
-    \printglossary
-  \endgroup
+\begingroup
+\let\clearpage\relax
+\glsaddall
+\printglossary[type=\acronymtype]
+\newpage
+\printglossary
+\endgroup
 
-  \printindex
-  \printbibliography
+\printindex
+\printbibliography
 
 \end{document}
