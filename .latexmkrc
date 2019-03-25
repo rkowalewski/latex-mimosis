@@ -2,7 +2,7 @@
 $ENV{'TEXINPUTS'} = './Styles//:' . $ENV{'TEXINPUTS'};
 
 # always generate a PDF
-$pdf_mode = 1;
+#$pdf_mode = 1;
 
 @default_files = ('Thesis.tex');
 

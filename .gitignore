@@ -41,5 +41,7 @@ tags
 ||||||| merged common ancestors
 =======
 
+*.synctex.gz
+
 tags
 >>>>>>> minor changes
