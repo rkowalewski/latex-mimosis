@@ -2,6 +2,8 @@
 
 \usepackage{metalogo}
 
+\input{Misc/macros}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Some of my favourite personal adjustments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,14 +113,17 @@
 \begin{document}
 
 \frontmatter
-\include{Sources/Title_Dissertation_LMU}
+\include{Misc/Title_Dissertation_LMU}
 \include{Sources/Abstract}
 
+\renewcommand{\contentsname}{Table of Contents}
+\pdfbookmark[section]{\contentsname}{toc}
 \tableofcontents
 
 \mainmatter
 
-\include{Sources/Introduction}
+%\include{Sources/Introduction}
+\input{Sources/Introduction}
 
 % This ensures that the subsequent sections are being included as root
 % items in the bookmark structure of your PDF reader.

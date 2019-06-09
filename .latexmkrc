@@ -1,5 +1,5 @@
 # Add Styles directory
-$ENV{'TEXINPUTS'} = './Styles//:' . $ENV{'TEXINPUTS'};
+$ENV{'TEXINPUTS'} = './Styles//:';
 
 # always generate a PDF
 #$pdf_mode = 1;

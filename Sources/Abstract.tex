@@ -1,9 +1,42 @@
-\begin{center}
-  \textsc{Abstract}
-\end{center}
-%
-\noindent
-%
-Scietificc documents often use \LaTeX{} for typesetting. While numerous
-packages and templates exist, it makes sense to create a new one. Just
-because.
+\pdfbookmark[section]{Abstract}{abstract}
+\chapter*{\centerline{\large Abstract}}
+
+The programming paradigm for scientific applications in the field of High
+Performance Computing (HPC) has been dominated by message passing for decades.
+Two-sided communication with send-receive semantics and scalable
+\emph{collectives} (\eg{} scatter, gather) are fundamental  primitives, where
+communication is orchestrated based on precise knowledge of the data
+distribution and data flow. This model fits the needs of tightly coupled
+scientific codes such as numeric or stencil applications. However, it provides
+at most little support for data-centric problems with more irregular
+communication patterns. Despite the ingenuity in the standardized Message
+Passing Interface (MPI) the bulk-synchronous programming model poses
+conceptual limitations to express data-centric algorithms and often limits
+scalability with the increasing core count on shared memory systems.
+
+Several attempts have been studied to imitate the familiar shared memory
+paradigm in distributed memory to provide more productive programming
+abstractions. The recently proposed Partitioned Global Address Space (PGAS)
+model leverages capabilities of modern network interconnects (NIC) to provide
+a one-sided \textsc{put-get} interface and enables performance-sensitive
+optimizations by exposing locality. PGAS exhibits a sophisticated abstraction
+not only in distributed memory but also for many-core architectures where
+processors are interconnected on several \emph{Non Uniform Memory
+Architectures} (NUMA) nodes.
+
+This thesis adopts ideas of the well-known \emph{Map-Reduce} pattern and
+contributes algorithmic building blocks for irregular communication-intensive
+applications. We focus on communication-intensive such as distributed sorting
+which is one of the most relevant non-numerical algorithms in computer
+science. It is inherently communication-bound and performance can only be
+achieved by minimizing data movement and asynchronously overlapping
+computation.  This thesis incorporates advanced techniques from the PGAS and
+message-passing models to design a highly efficient data exchange which is a
+fundamental operator in distributed memory. A prototypical implementation is
+accessible through a \CC{} interface and follows the concepts of the
+well-known standard template library (STL).  Experimental evaluations
+demonstrate scalability to thousands of processors with high-level programming
+abstractions which is a major requirement to saturate upcoming many-core
+Exascale HPC systems. The presented concepts even outperform tuned shared
+memory algorithms on a single node.
+

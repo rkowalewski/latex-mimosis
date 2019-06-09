@@ -1,0 +1,24 @@
+\usepackage{xpunctuate}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{relsize}
+\usepackage{ifthen}
+\newcommand*{\eg}{e.g\xperiodcomma\@\xspace}
+\newcommand*{\ie}{i.e\xperiodcomma}
+\newcommand*{\Ie}{I.e\xperiodcomma}
+\newcommand*{\etc}{etc\xperiod}
+\newcommand*{\cf}{cf\xperiod}
+\newcommand*{\etal}{\emph{et al}\xperiod}
+
+\newcommand{\CC}[1][]{$\text{C\hspace{-.25ex}}^{_{_{_{++}}}}
+	\ifthenelse{\equal{#1}{}}{}{\text{\hspace{-.625ex}#1}}$}
+\newcommand{\charmxx}{$\text{Charm}^{_{_{_{++}}}}$}
+\newcommand{\libstdcxx}{$\text{libstdc}^{_{_{_{++}}}}$}
+\newcommand{\code}[1]{{\small\texttt{#1}}}
+
+\newcommand\todoin[2][]{\todo[inline, caption={2do}, #1]{
+		\begin{minipage}{\textwidth-4pt}#2\end{minipage}}}
+
+%Enumerated description item
+\newcommand*\eitem[1]{\item{\itshape #1\\}}
+
